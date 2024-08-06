@@ -42,4 +42,4 @@ This is a memory game where you can earn points by clicking on images of animals
 The project can be deployed using platforms like Vercel, Netlify, or GitHub Pages. Make sure to update the API key if you're using a different environment.
 
 
-[Live Demo](https://renatoguedes-dev.github.io/animals-memory-game/)
+[Live Demo](https://renato-memory-game.netlify.app/)
