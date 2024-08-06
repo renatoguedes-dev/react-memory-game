@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Galada&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: linear-gradient(to bottom, black 0.5%, #3e6623 10%);
+  overflow-anchor: none;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  background-color: #3e6623;
+  color: white;
+  background-image: linear-gradient(to bottom, black 0.5%, #3e6623 10%);
+  font-family: "Acme", sans-serif;
+  padding: 0.5rem 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  position: relative;
+  gap: 20px;
+}
+
+.scores {
+  position: fixed;
+  right: 1rem;
+  top: 0.5rem;
+  cursor: not-allowed;
+}
+
+.gallery {
+  margin-top: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.image-card {
+  background-color: #8ab661;
+  padding: 0.4rem;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Galada", "Roboto", sans-serif;
+}
+
+.image-card:hover {
+  box-shadow: 0 0 40px #b8860b;
+}
+
+.image {
+  width: 240px;
+}
+
+.image-card,
+.image {
+  border-radius: 1rem;
+}
+
+.card-description {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 558px) {
+  .gallery {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .scores {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
+}
